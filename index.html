@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Mukesh — Portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-inner">
+                <div class="brand"><span class="logo">Mukesh</span><span class="muted"> • Web Dev</span></div>
+                <nav class="site-nav" aria-label="Primary navigation">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <button id="themeToggle" aria-pressed="false" title="Toggle theme">🌙</button>
+                </div>
+            </div>
+        </header>
+
+        <main id="home">
+            <section class="hero">
+                <div class="hero-inner">
+                    <div class="avatar"><img src="images/DSC_0311.JPG" alt="Mukesh"></div>
+                    <div class="hero-copy">
+                        <h1>Hello, I'm <strong>Mukesh</strong></h1>
+                        <p class="lead">A passionate web developer crafting clean and engaging web experiences.</p>
+                        <p class="meta">HTML • CSS • JavaScript • Design</p>
+                        <div class="cta">
+                            <a class="btn primary" href="#contact">Get in touch</a>
+                            <a class="btn ghost" href="#education">Education</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="card about">
+                <h2>About Me</h2>
+                <p>Second-year GCT undergraduate passionate about technology, learning, and building user-focused websites. I enjoy designing interfaces that people love to use.</p>
+            </section>
+
+            <section id="skills" class="card skills">
+                <h2>Skills</h2>
+                <div class="skill-grid">
+                    <div class="skill-item"><h4>JavaScript</h4><div class="bar"><div class="bar-fill lot">60%</div></div></div>
+                    <div class="skill-item"><h4>CSS</h4><div class="bar"><div class="bar-fill vil">70%</div></div></div>
+                    <div class="skill-item"><h4>HTML</h4><div class="bar"><div class="bar-fill min">80%</div></div></div>
+                </div>
+            </section>
+
+            <section id="education" class="card qualification">
+                <h2>Qualification</h2>
+                <div class="timeline">
+                    <article class="timeline-item"><div class="marker"></div><div class="content"><h4>SSLC — G.B.H School <small>2020</small></h4><p>56.20%</p><button class="btn ghost" onclick="show()">Details</button></div></article>
+                    <article class="timeline-item"><div class="marker"></div><div class="content"><h4>Class 12th — G.B.H School <small>2023</small></h4><p>60%</p><button class="btn ghost" onclick="sho()">Details</button></div></article>
+                    <article class="timeline-item"><div class="marker"></div><div class="content"><h4>College — GCT, Pachal <small>2024–2028</small></h4><p>CGPA: 6.99</p><button class="btn ghost" onclick="showed()">Details</button></div></article>
+                </div>
+            </section>
+
+            <section id="contact" class="card contact contact-layered">
+                <h2>Contact</h2>
+                <p class="lead">Let's build something together — get in touch.</p>
+                <div class="contact-grid">
+                    <div class="contact-card"><h4>Phone</h4><p>8825828732</p></div>
+                    <div class="contact-card"><h4>Email</h4><p>mukeshchinnadurai12@gmail.com</p></div>
+                    <div class="contact-card"><h4>Location</h4><p>Salem, Tamilnadu, India</p></div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer"><p>© Mukesh — Built with ❤️</p></footer>
+
+        <!-- Modals kept in DOM -->
+        <div class="over"></div>
+        <div class="pop"><button class="close" onclick="clos()">✖</button><strong>Class 10th</strong><p>Subjects: Science, Maths, Social Science, Tamil, English</p><p>56.20%</p></div>
+
+        <div class="overl"></div>
+        <div class="popu"><button class="close" onclick="cl()">✖</button><strong>Class 12th</strong><p>Subjects: Physics, Chemistry, Maths, Computer Science, English, Tamil</p><p>60%</p></div>
+
+        <div class="overlay"></div>
+        <div class="popup"><button class="close" onclick="clp()">✖</button><strong>College</strong><p>Studying core IT subjects including DSA, PSPP, CAO, Software Analysis — CGPA 6.99</p></div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
